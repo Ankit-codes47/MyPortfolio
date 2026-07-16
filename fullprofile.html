@@ -10,54 +10,55 @@
      <link rel="stylesheet" href="full.css">
 </head>
 <!--header start here-->
-<header style="text-align: center;">
-    <a href="index.html" class="back-profile"><i class="fas fa-arrow-left"></i></a>
-    <h1>Ankit Kumar</h1>
-    <h2>Full Stack Developer & Designer</h2>
-    <img src="ankit.png" width="400px" height="400px" style="border-radius: 20%;" object-fit="cover" alt="Ankit Kumar">
-</header>
+<body>
+    <header style="text-align: center;">
+        <a href="index.html" class="back-profile"><i class="fas fa-arrow-left"></i></a>
+        <h1>Ankit Kumar</h1>
+        <h2>Full Stack Developer & Designer</h2>
+        <img src="ankit.png" width="400px" height="400px" style="border-radius: 20%; object-fit: cover;" alt="Ankit Kumar">
+    </header>
 <!--header ends here-->
 <!--About section starts here-->
-<body>
-    <section style="text-align:center;">
-        <h2>About Me</h2>
+    <section class="about">
+        <h2 class="me">About Me</h2>
         <p>Hello! I'm Ankit Kumar,<br>
         I’m a passionate engineering student and aspiring developer who enjoys building creative and practical web projects.<br> I love exploring new technologies and improving my development skills through hands-on experience.<br> My goal is to create meaningful digital solutions while continuously learning and growing as a developer.
-
         </p>
     </section>
 <!--about section ends here-->
 <!--Projects start here-->
-    <section style="text-align:center;">
+    <section class="project">
         <img src="logop.png" alt="project" width="200px" height="200px" style="border-radius: 20%;" object-fit="cover">
         <p>Here are some of my recent projects:</p>
-    <article>
-        <br>
-        <img src="project1.png" alt="Project 1" width="200px" height="200px" style="border-radius: 20%;" object-fit="cover">
-        <h3>Project 1:Portfolio Website</h3>
-        <p>A reponsive portfolio website built with HTML,CSS and Javascript.</p>
-        <button class="cta-button">
-            <a href="#" target="_blank">View Project</a>
-        </button>
-    </article>
-    <article>
-        <br>
-        <img src="project2.png" alt="Project 2" width="200px" height="200px" style="border-radius: 20%;" object-fit="cover">
-        <h3>Project 2:E-Commerce Website</h3>
-        <p>A reponsive E-commerce website built with HTML.</p>
-        <button class="cta-button">
-            <a href="https://ankit-codes47.github.io/E-commerce/" target="_blank">View Project</a>
-        </button>
-    </article>
-    <article>
-        <br>
-        <img src="project3.png" alt="Project 3" width="200px" height="200px" style="border-radius: 20%;" object-fit="cover">
-        <h3>Project 3:Bloging Platform Website</h3>
-        <p>A reponsive Bloging Platform website built with HTML.</p>
-        <button class="cta-button">
-            <a href="#" target="_blank">View Project</a>
-        </button>
-    </article>
+        <div class="project-container">
+            <article>
+                <br>
+                <img src="project1.png" alt="Project 1" width="200px" height="200px" style="border-radius: 20%;" object-fit="cover">
+                <h3>Project 1:Portfolio Website</h3>
+                <p>A responsive portfolio website built with HTML,CSS and Javascript.</p>
+                <button class="cta-button">
+                    <a href="#" target="_blank">View Project</a>
+                </button>
+            </article>
+            <article>
+                <br>
+                <img src="project2.png" alt="Project 2" width="200px" height="200px" style="border-radius: 20%;" object-fit="cover">
+                <h3>Project 2:E-Commerce Website</h3>
+                <p>A responsive E-commerce website built with HTML.</p>
+                <button class="cta-button">
+                    <a href="https://ankit-codes47.github.io/E-commerce/" target="_blank">View Project</a>
+                </button>
+            </article>
+            <article>
+                <br>
+                <img src="project3.png" alt="Project 3" width="200px" height="200px" style="border-radius: 20%;" object-fit="cover">
+                <h3>Project 3:Blogging Platform Website</h3>
+                <p>A responsive Blogging Platform website built with HTML.</p>
+                <button class="cta-button">
+                    <a href="#" target="_blank">View Project</a>
+                </button>
+            </article>
+        </div>
     </section>
 <!--Projects ends here-->
 <!--skills section starts here-->
@@ -73,7 +74,7 @@
             <li><i class="fa-brands fa-mdb"></i>MongoDB</li>
             <li><i class="fa-brands fa-git-alt"></i>Git</li>
             <li><i class="fa-brands fa-github"></i>GitHub</li>
-            <li><i class="fa-brands fa-database"></i>Django</li>
+            <li><i class="fas fa-database"></i>Django</li>
             <li><i class="fa-brands fa-python"></i>Python</li>
             <li><i class="fa-brands fa-pencil-ruler"></i>UI/UX Design</li>
         </ul>
@@ -88,6 +89,7 @@
             <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/ankit-kumar-59b284372/" target="_blank">LinkedIn</a></li>
             <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Ankit-codes47/" target="_blank">GitHub</a></li>
         </ul>
+    </section>
 <!--Contact section ends here-->
 <!--contact form section starts here-->
     <section>
@@ -102,5 +104,10 @@
             <input type="submit" value="Submit">
         </form>
     </section>
+    <footer class="footer">
+    <p>&copy; 2026 Ankit Kumar | Designed with ❤️ by Ankit
+        <br>Passionate about creating elegant solutions...
+    </p>
+    </footer>
 </body>
 </html>

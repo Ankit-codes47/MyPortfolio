@@ -1,31 +1,67 @@
 body{
-        background-color: #f1f1f1;
+    background-color: #e8eaf6;
 }
 header{
     position:relative;
 }
 .back-profile{
-    display:flex;
-    justify-content:left;
+    position:absolute;
     top:20px;
     left:20px;
-    width:90px;
-    height:0px;
-    border-radius:50%;
-    text-align:left;
     text-decoration:none;
     color:#333;
-    font-weight:bold;
-    transition:background-color 0.2s;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    cursor:pointer;
-    font-weight: bold;
-    width:25%;
+    font-size:24px;
+    transition:color 0.2s;
 }
+
 .back-profile:hover{
     color:#d81b60;
+}
+.about{
+    text-align:left;
+    padding:20px;
+    background-color:#f3f4ff;
+    border-radius:8px;
+    margin-bottom:20px;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+.me{
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:10px;
+    text-align:left;
+}
+.project{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+.project-container article{
+    width:300px;
+    padding:20px;
+    text-align:center;
+    background-color:#f3f4ff;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    position: sticky;
+    top:20px;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-container article:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 /*button styling*/
 .cta-button{
@@ -37,7 +73,7 @@ header{
     border-radius:5px;
     cursor:pointer;
     font-weight: bold;
-    width:25%;
+    width:auto;
 }
 .cta-button a{
     color:white;
@@ -45,4 +81,28 @@ header{
 }
 .cta-button:hover{
     background-color: #8c0589;
+}
+.footer{
+    background-color:#f3f4ff;
+    color:#616161;
+    width:100%;
+    padding:12px 20px;
+    margin-top:20px;
+    text-align:center;
+    border-radius:8px;
+}
+@media (max-width: 600px){
+    body{
+        padding:15px;
+        align-items:center;
+    }
+    .project-container{
+    flex-direction:column;
+    align-items:center;
+    }
+
+    .project-container article{
+        width:100%;
+        max-width:300px;
+    }
 }
