@@ -12,14 +12,23 @@
 <!--header start here-->
 <body>
     <header style="text-align: center;">
-        <a href="index.html" class="back-profile"><i class="fas fa-arrow-left"></i></a>
-        <h1>Ankit Kumar</h1>
+        <div class="container">
+            <nav>
+                <div class="logo">Ankit Kumar</div>   
+                <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Profile Card</a></li>
+                </ul>
+            </nav>
+        </div>
         <h2>Full Stack Developer & Designer</h2>
         <img src="ankit.png" class="main-photo" alt="Ankit Kumar">
     </header>
 <!--header ends here-->
 <!--About section starts here-->
-    <section class="about">
+    <section class="about" id="about">
         <h2 class="me">About Me</h2>
         <p>Hello! I'm Ankit Kumar,<br>
         I’m a passionate engineering student and aspiring developer who enjoys building creative and practical web projects.<br> I love exploring new technologies and improving my development skills through hands-on experience.<br> My goal is to create meaningful digital solutions while continuously learning and growing as a developer.
@@ -62,7 +71,7 @@
     </section>
 <!--Projects ends here-->
 <!--skills section starts here-->
-    <section style="text-align:center; font-size: 20px;">
+    <section id="skills" style="text-align:center; font-size: 20px;">
         <h2> Skills</h2>
         <ul style="list-style-type:none;">
             <li><i class="fa-brands fa-html5"></i>HTML</li>
@@ -92,7 +101,7 @@
     </section>
 <!--Contact section ends here-->
 <!--contact form section starts here-->
-    <section>
+    <section  id="contact">
         <h3>Contact Form</h3>
         <form>
             <label for="name">Name:</label>
