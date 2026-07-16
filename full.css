@@ -20,6 +20,13 @@ header{
 .back-profile:hover{
     color:#d81b60;
 }
+.main-photo{
+    width:400px;
+    height:400px;
+    max-width:100%;
+    object-fit:cover;
+    border-radius:20%;
+}
 .about{
     text-align:left;
     padding:20px;
@@ -92,17 +99,26 @@ header{
     text-align:center;
     border-radius:8px;
 }
+ul{
+    padding-left:0;
+}
+
+li i{
+    margin-right:8px;
+}
+
+a{
+    overflow-wrap:anywhere;
+}
 @media (max-width:600px){
 
     body{
         padding:15px;
         margin:0;
     }
-
-    header img{
-        width:100%;
-        max-width:300px;
-        height:auto;
+    .main-photo{
+        width: 250px;
+        height:250px;
     }
 
     .project-container{
@@ -114,10 +130,15 @@ header{
         width:100%;
         max-width:300px;
     }
-
     .project-container article img{
-        max-width:100%;
-        height:auto;
+    width:200px;
+    height:200px;
+    max-width:100%;
+    object-fit:cover;
+}
+    .project-container article:active{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
     }
 
     textarea{
