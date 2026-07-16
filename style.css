@@ -36,7 +36,7 @@ body{
 .profile-main{
     padding:30px;
 }
-h2{
+h1{
     margin:10px;
 }
 .job-title{
@@ -107,7 +107,7 @@ h2{
 @media (max-width: 600px){
     body{
         padding:15px;
-        align-items:flex-start;
+        align-items:center;
     }
 
     .profile-cart{
