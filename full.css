@@ -6,11 +6,12 @@ body{
 }
 header{
     position:relative;
+    padding-top:40px;
 }
 .back-profile{
     position:absolute;
-    top:20px;
-    left:20px;
+    top:10px;
+    left:10px;
     text-decoration:none;
     color:#333;
     font-size:24px;
@@ -21,8 +22,8 @@ header{
     color:#d81b60;
 }
 .main-photo{
-    width:400px;
-    height:400px;
+    width:250px;
+    height:250px;
     max-width:100%;
     object-fit:cover;
     border-radius:20%;
@@ -111,14 +112,18 @@ a{
     overflow-wrap:anywhere;
 }
 @media (max-width:600px){
+    .back-profile{
+        top:5px;
+        left:5px;
+    }
 
     body{
         padding:15px;
         margin:0;
     }
     .main-photo{
-        width: 250px;
-        height:250px;
+        width: 180px;
+        height:180px;
     }
 
     .project-container{
@@ -145,7 +150,15 @@ a{
         width:100%;
         max-width:100%;
     }
+     li a{
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
 
+    ul{
+        font-size:16px !important;
+        padding-left:0;
+    }
     .footer{
         width:100%;
     }
